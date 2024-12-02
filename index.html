@@ -1,17 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-    </main>
-	<script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garv Jain Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero-section">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <!-- Logo -->
+      <img src="logo.png" alt="Logo" class="logo">
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="resume.pdf" download class="btn btn-outline-light">Download CV</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content text-center">
+      <h1>Hi, I am Garv Jain</h1>
+      <p class="subtitle">Video Editor & Motion Designer</p>
+      <p class="description">
+        I am a passionate and skilled video editor with over 5 years of experience in crafting high-quality, 
+        engaging content. With a strong foundation in design, I bring a unique perspective to every project, 
+        blending visually captivating designs with strategic editing to maximize viewer engagement.
+      </p>
+
+      <!-- Location and Social Links -->
+      <div class="location mt-3">
+        <p><span class="icon">📍</span> Indore, India</p>
+        <p><span class="icon">🟢</span> Available for new projects</p>
+      </div>
+      <div class="social-links mt-2">
+        <a href="#" class="social-icon">Instagram</a>
+        <a href="#" class="social-icon">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate and skilled video editor with over 5 years of experience in crafting high-quality, engaging content. 
+        With a strong foundation in design from my education at a top designing college, I bring a unique perspective to every project.
+      </p>
+    </div>
+  </section>
+
+  <section id="work" class="py-5 bg-light">
+    <div class="container">
+      <h2>Noteworthy Projects</h2>
+      <div class="row">
+        <!-- Example project -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="placeholder.png" class="card-img-top" alt="Project Screenshot">
+            <div class="card-body">
+              <h5 class="card-title">Video Editing Showreel</h5>
+              <p class="card-text">
+                Showcasing diverse styles from quick cuts to cinematic sequences.
+              </p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more projects similarly -->
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-5">
+    <div class="container text-center">
+      <h2>Skills</h2>
+      <div class="d-flex justify-content-center">
+        <img src="after-effects-logo.png" alt="After Effects" class="m-2">
+        <img src="premiere-pro-logo.png" alt="Premiere Pro" class="m-2">
+        <img src="photoshop-logo.png" alt="Photoshop" class="m-2">
+        <img src="illustrator-logo.png" alt="Illustrator" class="m-2">
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>Contact me at garv2509@gmail.com or call +91 8989070783</p>
+      <p>
+        <a href="#" class="text-white mx-2">Instagram</a> |
+        <a href="#" class="text-white mx-2">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
